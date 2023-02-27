@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto :wght@300;500 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+
+}
+
+section {
+  padding: 4rem 0;
+}
+
+/* Botão Flutuante */
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.5;
+    display: none;
+    background: #c00812;
+    color: #ffff;
+  }
+  
+  #btn-top:hover {
+    opacity: 1;
+    transform:  scale(1.1);
+  }
+
+  #btn-top.show {
+    display: inline-block;
+  }
+  
