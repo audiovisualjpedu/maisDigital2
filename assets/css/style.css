@@ -12,14 +12,41 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Header */
 .logo {
   width: 64px;
   height: 64px;
 
 }
 
+/* Seções */
 section {
   padding: 4rem 0;
+}
+
+/* Titulos das Seções */
+.titulo {
+  font-weight: 400;
+}
+
+/* Cards */
+.card-curso {
+  transition: 500ms; 
+}
+
+.card-curso:hover {
+  transform: translateY(-10px);
+
+}
+
+/* Opacidade da imagem da seção 1 */
+.bg-section1 {
+  opacity: 0.4;
+}
+
+/* Cores de Fundo das Seções */
+.bg-cinza {
+  background: #e2e2e2;
 }
 
 /* Botão Flutuante */
@@ -42,3 +69,13 @@ section {
     display: inline-block;
   }
   
+  /* Rodapé */
+  .rodape {
+    background: #c00812;
+    color: #FFFF;
+  }
+
+  .logo-rodape {
+    width: 128px;
+    margin-top: 20px;
+  }
