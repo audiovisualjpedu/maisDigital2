@@ -13,10 +13,10 @@ body {
 }
 
 /* Header */
-.logo {
-  width: 64px;
-  height: 64px;
 
+
+.logo {
+  width: 128px;
 }
 
 /* Seções */
@@ -28,6 +28,13 @@ section {
 .titulo {
   font-weight: 400;
 }
+
+/* Carousel */
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 80%;
+    margin: auto;
+  }
 
 /* Cards */
 .card-curso {
@@ -41,7 +48,7 @@ section {
 
 /* Opacidade da imagem da seção 1 */
 .bg-section1 {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 /* Cores de Fundo das Seções */
@@ -58,6 +65,7 @@ section {
     display: none;
     background: #c00812;
     color: #ffff;
+    border: 1px solid #FFFF;
   }
   
   #btn-top:hover {
@@ -71,7 +79,7 @@ section {
   
   /* Rodapé */
   .rodape {
-    background: #c00812;
+    background: #7534D1;
     color: #FFFF;
   }
 
