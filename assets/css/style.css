@@ -19,6 +19,15 @@ body {
   width: 128px;
 }
 
+.navbar-toggler {
+  color: #FFFF !important;
+}
+
+button:focus {
+  background: #7534D1 !important;
+  
+}
+
 /* Seções */
 section {
   padding: 4rem 0;
