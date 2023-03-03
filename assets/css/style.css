@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family= Roboto :wght@300;500 & display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
 }
 
 body {
@@ -13,8 +13,6 @@ body {
 }
 
 /* Header */
-
-
 .logo {
   width: 128px;
 }
@@ -25,7 +23,7 @@ body {
 
 button:focus {
   background: #7534D1 !important;
-  
+
 }
 
 /* Seções */
@@ -38,16 +36,9 @@ section {
   font-weight: 400;
 }
 
-/* Carousel */
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    width: 80%;
-    margin: auto;
-  }
-
 /* Cards */
 .card-curso {
-  transition: 500ms; 
+  transition: 500ms;
 }
 
 .card-curso:hover {
@@ -67,32 +58,104 @@ section {
 
 /* Botão Flutuante */
 #btn-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0.5;
-    display: none;
-    background: #c00812;
-    color: #ffff;
-    border: 1px solid #FFFF;
-  }
-  
-  #btn-top:hover {
-    opacity: 1;
-    transform:  scale(1.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.5;
+  display: none;
+  background: #7534D1;
+  color: #ffff;
+  border: 1px solid #FFFF;
+}
+
+#btn-top:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#btn-top.show {
+  display: inline-block;
+}
+
+/* Rodapé */
+.rodape {
+  background: #7534D1;
+  color: #FFFF;
+}
+
+.logo-rodape {
+  width: 128px;
+  margin-top: 20px;
+}
+
+/* Carousel */
+
+.video-frame {
+  max-width: 100%;
+  height: 17em;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
   }
 
-  #btn-top.show {
-    display: inline-block;
-  }
-  
-  /* Rodapé */
-  .rodape {
-    background: #7534D1;
-    color: #FFFF;
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100/3);
   }
 
-  .logo-rodape {
-    width: 128px;
-    margin-top: 20px;
+  .iframe {
+    height: 20vw;
   }
+
+  .carousel-inner {
+    padding: 1em;
+  }
+
+  .video {
+    margin: 0 .5em;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    display: flex;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100/3);
+  }
+
+  .iframe {
+    height: 23vw;
+  }
+
+  .carousel-inner {
+    padding: 1em;
+  }
+
+  .video {
+    margin: 0 .5em;
+  }
+}
+
+/* Parallax */
+.parallax_img {
+  height: 650px;
+  background-image: url('/assets/img/bg-3.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
