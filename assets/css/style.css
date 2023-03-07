@@ -14,7 +14,7 @@ body {
 
 /* Header */
 .logo {
-  width: 128px;
+  height: 60px;
 }
 
 .navbar-toggler {
@@ -34,9 +34,15 @@ section {
 /* Titulos das Seções */
 .titulo {
   font-weight: 400;
+  margin-top: 50px;
 }
 
 /* Cards */
+.card-mais-digital {
+  background: #7534D1 !important;
+  color: #FFFF;
+}
+
 .card-curso {
   transition: 500ms;
 }
@@ -81,11 +87,29 @@ section {
 .rodape {
   background: #7534D1;
   color: #FFFF;
+  padding: 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 .logo-rodape {
-  width: 128px;
-  margin-top: 20px;
+  width: 256px;
+}
+
+.blocos-footer {
+  padding: 20px;
+
+}
+
+.blocos-footer h2 {
+  margin-top: 0;
 }
 
 
@@ -110,4 +134,73 @@ section {
 
 .cabecalho {
   background: #FFFF;
+}
+
+.icones {
+  width: 120px;
+  height: 120px;
+}
+
+.text-title {
+  font-size: 20px;
+}
+
+.custom-card {
+  height: 250px;
+  width: 350px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.card-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-titulo-icones {}
+
+.parallax {
+  background: url("/assets/img/bg-3.png") no-repeat fixed top center;
+  height: 550px;
+  /*altura da imagem*/
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -65px;
+}
+
+/* .parallax:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+} */
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+
+.banner-container {
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: -65px;
+}
+
+.banner-container img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
 }
