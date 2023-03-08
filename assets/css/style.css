@@ -156,16 +156,38 @@ section {
 
 }
 
-.card-icones {
+.div-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease-in-out, 
+              filter 0.3s ease-in-out;
+  /* transform-origin: center center; */
+}
+
+.div-icones img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.div-icones:hover {
+  transform: rotate(20deg) scale(1.2);
+  filter: brightness(120%);
+  animation: beat 1s ease-in-out infinite alternate;
+}
+
+.card-titulo-icones {}
+
+.car-link-icones {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card-titulo-icones {}
-
 .parallax {
-  background: url("https://www.imagemhost.com.br/images/2023/03/07/bg-3.png") no-repeat fixed top center;
+  /* background: url("https://www.imagemhost.com.br/images/2023/03/07/bg-3.png") no-repeat fixed top center; */
+  background: url("../img/bg-3.png") no-repeat fixed top center;
   height: 550px;
   /*altura da imagem*/
   overflow: hidden;
@@ -203,4 +225,17 @@ section {
   height: 180px;
   width: 100%;
   object-fit: cover;
+}
+
+.lista-footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.endereco {
+  padding: 15px 0;
+}
+
+.heart {
+  animation: animate__heartBeat 1s;
 }
