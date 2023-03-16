@@ -28,10 +28,10 @@ button:focus {
 }
 
 .parallax {
-  background: url("../img/bg-main.png") no-repeat fixed top center;
-  height: 550px;
+  background: url("../img/bg-main-larger.png") no-repeat fixed top center;
+  height: 585px;
   overflow: hidden;
-  position: relative;
+ /*  position: relative; */
   margin-bottom: -65px;
   /* opacity: 0.3; */
 }
@@ -55,6 +55,59 @@ button:focus {
   text-align: center;
 }
 
+/* Media Queries */
+
+/* Estilos padrão para a imagem */
+/* img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+} */
+
+/* Media query para telas extra grandes (maiores que 1200px) */
+@media (min-width: 1200px) {
+  /* img {
+    max-width: 800px;
+  } */
+  .parallax {
+  background: url("../img/bg-main.png") no-repeat fixed top center;
+  
+  }
+}
+
+/* Media query para telas grandes (maiores que 992px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .parallax {
+    background: url("../img/img-larger.png") no-repeat fixed top center;
+    height: 500px;
+    }
+}
+
+/* Media query para telas médias (maiores que 768px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .parallax {
+    background: url("../img/img-media.png") no-repeat fixed top center;
+    height: 500px;
+    }
+}
+
+/* Media query para telas pequenas (maiores que 576px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .parallax {
+    background: url("../img/img-small.png") no-repeat fixed top center;
+    height: 400px;
+    }
+}
+
+/* Media query para telas muito pequenas (menores que 576px) */
+@media (max-width: 575px) {
+  .parallax {
+    background: url("../img/img-small-small.png") no-repeat fixed top center;
+    height: 250px;
+    }
+}
+
+
 /* Seções */
 section {
   padding: 4rem 0;
@@ -65,30 +118,92 @@ section {
   background: #F6F6F6;
 }
 
+.bg-roxo {
+  background: #d0a0ff;
+}
+
 /* Titulos das Seções */
 .titulo {
   font-weight: 400;
   margin-top: 50px;
 }
 
-/* Seção 2 */
+/* Seção 2 e 3 */
 .banner-container {
-  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 200px; */ /* altura da seção em pixels */
+  height: 10vh; /* altura da seção em 20% da altura da tela */
   overflow: hidden;
-  margin-bottom: -65px;
+  /* margin-bottom: -65px; */
+  padding: 0;
 }
 
-.banner-container img {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
+.banner-container h2 {
+  color: #7534D1;
+  font-size: 75px;
 }
 
+.chromebook {
+  height: 600px;
+  height: 50vh;
+}
 
-/* Cards Seção 2 */
-.card-mais-digital {
+/* Cards Seção 3 */
+.mais-digital {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.mais-digital img {
+  width: 200px;
+}
+
+.card-mais-digital-1 {
+  background: #8F5FC5 !important;
+  color: #FFFF;  
+}
+
+.card-mais-digital-2 {
   background: #7534D1 !important;
   color: #FFFF;
+}
+
+.card-mais-digital-3 {
+  background: #4F165B !important;
+  color: #FFFF;
+}
+
+.botao-card-1 {
+  width: 100%;
+  color: #8F5FC5;
+}
+
+.botao-card-1:hover {
+  background: #8F5FC5;
+  color: #fff;
+}
+
+.botao-card-2 {
+  width: 100%;
+  color: #7534D1 ;
+}
+
+.botao-card-2:hover {
+  background: #7534D1;
+  color: #fff;
+}
+
+.botao-card-3 {
+  width: 100%;
+  color: #4F165B;
+}
+
+.botao-card-3:hover {
+  background: #4F165B;
+  color: #fff;
 }
 
 .card-curso {
@@ -100,7 +215,7 @@ section {
 
 }
 
-/* Cards com ícones Seção 3 */
+/* Cards com ícones Seção 4 */
 .icones {
   width: 120px;
   height: 120px;
@@ -148,7 +263,6 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -162,6 +276,10 @@ section {
 
 .blocos-footer h2 {
   margin-top: 0;
+}
+
+.blocos-footer img {
+  width: 200px;
 }
 
 .lista-footer a{
@@ -194,3 +312,53 @@ section {
   display: inline-block;
 }
 
+/* .modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+ */
+
+
+ /* DIV TESTE BANNER CHROMEBOOK */
+ /* .conteudo-teste {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  background-color: #8F5FC5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+}
+
+.bottom {
+  background-color: white;
+  flex: 1;
+}
+
+.hexagon-left {
+  width: 50%;
+  height: 100px;
+  background-image: url('../img/hexagonos.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  position: relative;
+}
+
+.hexagon-right {
+  width:50%;
+  height: 100px;
+  background-image: url('../img/hexagonos.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  transform: scaleX(-1);
+  position: relative;
+}
+ */
