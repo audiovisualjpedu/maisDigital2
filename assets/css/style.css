@@ -115,11 +115,12 @@ section {
 
 /* Cores de Fundo das Seções */
 .bg-cinza {
-  background: #F6F6F6;
+  background: #E6E6E6;
 }
 
 .bg-roxo {
   background: #d0a0ff;
+  color: #F6F6F6;
 }
 
 /* Titulos das Seções */
@@ -134,7 +135,7 @@ section {
   align-items: center;
   justify-content: center;
   /* height: 200px; */ /* altura da seção em pixels */
-  height: 10vh; /* altura da seção em 20% da altura da tela */
+  height: 50vh; /* altura da seção em 20% da altura da tela */
   overflow: hidden;
   /* margin-bottom: -65px; */
   padding: 0;
@@ -147,7 +148,7 @@ section {
 
 .chromebook {
   height: 600px;
-  height: 50vh;
+  height: 25vh;
 }
 
 /* Cards Seção 3 */
@@ -320,8 +321,8 @@ section {
  */
 
 
- /* DIV TESTE BANNER CHROMEBOOK */
- /* .conteudo-teste {
+ /* DIV TESTE BANNER CHROMEBOOK HEXAGONOS */
+  .conteudo-teste {
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -361,7 +362,7 @@ section {
   transform: scaleX(-1);
   position: relative;
 }
- */
+
 
 
 /*  .conteudo {
@@ -413,3 +414,146 @@ section {
   90% {margin-top: 0;}
   100% {margin-top: 0;}
 } */
+
+
+#unified-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /*grid-template-rows: auto;*/
+  grid-template-rows: 100px 100px;
+  grid-template-areas: 
+      "image text1"
+      "image text2";
+  background: linear-gradient(to bottom, #8f5fc5 50%, #F6F6F6 50%);
+  position: relative;
+  padding: 2rem 4rem;
+}
+
+.image-container {
+  grid-area: image;
+  place-self: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+.text-container-1 {
+  place-self: center;
+  font-size: 6vh;
+  margin-bottom: 35px;
+}
+
+.text-container-2 {
+  place-self: center;
+  font-size: 4vh;
+  margin-bottom: 5px;
+}
+
+.text-1 {
+  padding: 20px;
+  place-self: center;
+    text-align: center;
+    color: #F6F6F6;
+}
+
+.text-2 {
+  padding: 20px;
+  place-self: center;
+    text-align: center;
+    margin-bottom: -37px;
+    color: #8F5FC5;
+}
+
+
+.text-1 p{
+  margin-bottom: 0px;
+}
+
+.text-2 p{
+    margin-bottom: 0px;
+}
+
+/* Define as propriedades iniciais para os elementos */
+.text-part-1,
+.text-part-2 {
+    grid-area: text1;
+    place-self: center;
+    text-align: center;
+    font-size: 10.5vw;
+    border: 2px solid #cf0000;
+    padding: 10px;
+    height: 50vh; /* Definimos a altura inicial para 50vh */
+}
+
+.my-image {
+    width: 24vw;
+    min-height: 18vw;
+}
+
+@media (max-width: 1200px) {
+  .text-part-1,
+.text-part-2 {
+        font-size: 3.5vw;
+        height: 45vh; /* Reduzimos a altura para 45vh */
+    }
+
+    .my-image {
+        width: 27vw;
+        min-height: 20vw;
+    }
+}
+
+@media (max-width: 992px) {
+  .text-part-1,
+.text-part-2 {
+        font-size: 2.5vw;
+        height: 40vh; /* Reduzimos a altura para 40vh */
+    }
+
+    .my-image {
+        width: 34vw;
+        min-height: 25vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #unified-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "text1"
+            "image"
+            "text2";
+    }
+
+    .text-part-1,
+.text-part-2 {
+        font-size: 2.5vw;
+        height: 35vh; /* Reduzimos a altura para 35vh */
+    }
+
+    .my-image {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+
+  #unified-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "text1"
+        "image"
+        "text2";
+}
+  .text-part-1,
+.text-part-2 {
+        font-size: 2vw;
+        height: 30vh; /* Reduzimos a altura para 30vh */
+    }
+
+    .my-image {
+        width: 60vw;
+    }
+}
