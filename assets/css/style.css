@@ -59,7 +59,7 @@ button:focus {
 /* Media query para telas grandes (maiores que 992px) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .parallax {
-    background: url("../img/img-larger.png") no-repeat fixed top center;
+    background: url("../img/img-xlarger.png") no-repeat fixed top center;
     height: 500px;
   }
 }
@@ -67,7 +67,7 @@ button:focus {
 /* Media query para telas médias (maiores que 768px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .parallax {
-    background: url("../img/img-media.png") no-repeat fixed top center;
+    background: url("../img/img-larger.png") no-repeat fixed top center;
     height: 500px;
   }
 }
@@ -75,7 +75,7 @@ button:focus {
 /* Media query para telas pequenas (maiores que 576px) */
 @media (min-width: 576px) and (max-width: 767px) {
   .parallax {
-    background: url("../img/img-small.png") no-repeat fixed top center;
+    background: url("../img/img-medium.png") no-repeat fixed top center;
     height: 400px;
   }
 }
@@ -83,7 +83,7 @@ button:focus {
 /* Media query para telas muito pequenas (menores que 576px) */
 @media (max-width: 575px) {
   .parallax {
-    background: url("../img/img-small-small.png") no-repeat fixed top center;
+    background: url("../img/img-small.png") no-repeat fixed top center;
     height: 250px;
   }
 }
@@ -464,6 +464,7 @@ section {
       "image"
       "text2";
       padding: 1rem 1rem;
+      margin-top: 30px;
   }
 
   .text-1{
