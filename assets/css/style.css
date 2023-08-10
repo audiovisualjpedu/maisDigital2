@@ -32,7 +32,6 @@ button:focus {
   overflow: hidden;
   /*  position: relative; */
   margin-bottom: -65px;
-  /* opacity: 0.3; */
 }
 
 .parallax-content {
@@ -46,10 +45,6 @@ button:focus {
 
 /* Media query para telas extra grandes (maiores que 1200px) */
 @media (min-width: 1200px) {
-
-  /* img {
-    max-width: 800px;
-  } */
   .parallax {
     background: url("../img/bg-main.png") no-repeat fixed top center;
 
@@ -217,7 +212,6 @@ section {
   transform: rotate(-10deg);
   transition: transform 0.3s ease-in-out,
     filter 0.3s ease-in-out;
-  /* transform-origin: center center; */
 }
 
 .div-icones img {
@@ -391,7 +385,7 @@ section {
 
 @media (max-width: 1200px) {
 
-  .text-1{
+  .text-1 {
     font-size: 3vw;
   }
 
@@ -407,7 +401,7 @@ section {
 
 @media (max-width: 992px) {
 
-  .text-1{
+  .text-1 {
     font-size: 3vw;
   }
 
@@ -429,10 +423,10 @@ section {
       "text1"
       "image"
       "text2";
-      padding: 1rem 1rem;
+    padding: 1rem 1rem;
   }
 
-  .text-1{
+  .text-1 {
     font-size: 5vw;
   }
 
@@ -449,7 +443,7 @@ section {
     margin-bottom: 0px;
     margin-top: -20px;
   }
-  
+
   .text-container-2 {
     margin-top: -20px;
   }
@@ -468,11 +462,11 @@ section {
       "text1"
       "image"
       "text2";
-      padding: 1rem 1rem;
-      margin-top: 30px;
+    padding: 1rem 1rem;
+    margin-top: 30px;
   }
 
-  .text-1{
+  .text-1 {
     font-size: 5vw;
   }
 
@@ -498,5 +492,114 @@ section {
     padding: 0px;
   }
 
+}
 
+.carousel-container {
+  /* width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative; */
+
+  width: 100%;
+    overflow: hidden;
+    position: relative; /* Para posicionar os botões de navegação de forma absoluta */
+}
+
+.carousel-slider {
+  display: flex;
+  transition: all 0.5s ease;
+  gap: 10px;
+  will-change: transform;
+}
+
+.carousel-slider .card {
+  flex: 0 0 auto;
+  width: calc(100% / 5);
+  /* Mostrando 3 cards por vez */
+  padding: 20px;
+  box-sizing: border-box;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-slider .card .capa {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.carousel-slider .card .card-body{
+padding: 0px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Para adicionar uma opacidade e torná-los ligeiramente transparentes */
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #7534D1;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Tornar o botão completamente opaco quando o mouse estiver sobre ele */
+}
+
+#prev {
+  left: 10px;
+  color: #7534D1;
+  height: 80%;
+}
+
+#next {
+  right: 10px;
+  color: #7534D1;
+  height: 80%;
+}
+
+@media (max-width: 1200px) {
+  .carousel-slider .card {
+    width: calc(100% / 4);
+    /* Mostrando 2 cards por vez em telas menores */
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-slider .card {
+    width: calc(100% / 3);
+    /* Mostrando 2 cards por vez em telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-slider .card {
+    width: calc(100% / 2);
+    /* Mostrando 2 cards por vez em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slider .card {
+    
+    max-width: 50%;
+    /* Mostrando 1 card por vez em telas muito pequenas */
+  }
 }
