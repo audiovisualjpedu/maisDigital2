@@ -502,8 +502,9 @@ section {
   position: relative; */
 
   width: 100%;
-    overflow: hidden;
-    position: relative; /* Para posicionar os botões de navegação de forma absoluta */
+  overflow: hidden;
+  position: relative;
+  /* Para posicionar os botões de navegação de forma absoluta */
 }
 
 .carousel-slider {
@@ -528,19 +529,35 @@ section {
   max-width: 100%;
   display: block;
   margin-bottom: 10px;
-  height: 80px;
-  width: 80px;
 }
 
-.carousel-slider .card .card-body{
-padding: 0px;
+.carousel-slider .card .capa img{
+  max-width: 100%;
+  height: 80px;
+}
+
+.carousel-slider .card .card-body {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-slider .card .card-body .btn-primary {
+  background: #7534D1;
+}
+
+.carousel-slider .card .card-body .btn-primary:hover {
+  background: #8F5FC5;
 }
 
 .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7); /* Para adicionar uma opacidade e torná-los ligeiramente transparentes */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Para adicionar uma opacidade e torná-los ligeiramente transparentes */
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -560,7 +577,8 @@ padding: 0px;
 }
 
 .carousel-button:hover {
-  background-color: rgba(255, 255, 255, 1); /* Tornar o botão completamente opaco quando o mouse estiver sobre ele */
+  background-color: rgba(255, 255, 255, 1);
+  /* Tornar o botão completamente opaco quando o mouse estiver sobre ele */
 }
 
 #prev {
@@ -598,7 +616,7 @@ padding: 0px;
 
 @media (max-width: 480px) {
   .carousel-slider .card {
-    
+
     max-width: 50%;
     /* Mostrando 1 card por vez em telas muito pequenas */
   }
