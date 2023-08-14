@@ -30,7 +30,6 @@ button:focus {
   background: url("../img/bg-main-larger.png") no-repeat fixed top center;
   height: 585px;
   overflow: hidden;
-  /*  position: relative; */
   margin-bottom: -65px;
 }
 
@@ -43,7 +42,6 @@ button:focus {
   text-align: center;
 }
 
-/* Media query para telas extra grandes (maiores que 1200px) */
 @media (min-width: 1200px) {
   .parallax {
     background: url("../img/bg-main.png") no-repeat fixed top center;
@@ -51,7 +49,6 @@ button:focus {
   }
 }
 
-/* Media query para telas grandes (maiores que 992px) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .parallax {
     background: url("../img/img-xlarger.png") no-repeat fixed top center;
@@ -59,7 +56,6 @@ button:focus {
   }
 }
 
-/* Media query para telas médias (maiores que 768px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .parallax {
     background: url("../img/img-larger.png") no-repeat fixed top center;
@@ -67,7 +63,6 @@ button:focus {
   }
 }
 
-/* Media query para telas pequenas (maiores que 576px) */
 @media (min-width: 576px) and (max-width: 767px) {
   .parallax {
     background: url("../img/img-medium.png") no-repeat fixed top center;
@@ -75,7 +70,6 @@ button:focus {
   }
 }
 
-/* Media query para telas muito pequenas (menores que 576px) */
 @media (max-width: 575px) {
   .parallax {
     background: url("../img/img-small.png") no-repeat fixed top center;
@@ -83,13 +77,10 @@ button:focus {
   }
 }
 
-
-/* Seções */
 section {
   padding: 4rem 0;
 }
 
-/* Cores de Fundo das Seções */
 .bg-cinza {
   background: #E6E6E6;
 }
@@ -99,23 +90,17 @@ section {
   color: #F6F6F6;
 }
 
-/* Titulos das Seções */
 .titulo {
   font-weight: 400;
   margin-top: 50px;
 }
 
-/* Seção 2 e 3 */
 .banner-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 200px; */
-  /* altura da seção em pixels */
   height: 50vh;
-  /* altura da seção em 20% da altura da tela */
   overflow: hidden;
-  /* margin-bottom: -65px; */
   padding: 0;
 }
 
@@ -129,7 +114,6 @@ section {
   height: 25vh;
 }
 
-/* Cards Seção 3 */
 .mais-digital {
   margin-top: 50px;
   display: flex;
@@ -230,7 +214,6 @@ section {
   align-items: center;
 }
 
-/* Rodapé */
 .rodape {
   background: #7534D1;
   color: #FFFF;
@@ -269,7 +252,6 @@ section {
   padding: 15px 0;
 }
 
-/* Botão Flutuante */
 #btn-top {
   position: fixed;
   bottom: 20px;
@@ -304,11 +286,9 @@ section {
   flex: 1;
 }
 
-/* SEÇÃO CHROMEBOOK */
 #unified-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /*grid-template-rows: auto;*/
   grid-template-rows: 100px 100px;
   grid-template-areas:
     "image text1"
@@ -360,7 +340,6 @@ section {
   margin-bottom: 0px;
 }
 
-/* Define as propriedades iniciais para os elementos */
 .text-1 {
   grid-area: text1;
   place-self: center;
@@ -495,16 +474,9 @@ section {
 }
 
 .carousel-container {
-  /* width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  position: relative; */
-
   width: 100%;
   overflow: hidden;
   position: relative;
-  /* Para posicionar os botões de navegação de forma absoluta */
 }
 
 .carousel-slider {
@@ -517,7 +489,6 @@ section {
 .carousel-slider .card {
   flex: 0 0 auto;
   width: calc(100% / 5);
-  /* Mostrando 3 cards por vez */
   padding: 20px;
   box-sizing: border-box;
   height: 200px;
@@ -557,7 +528,6 @@ section {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.7);
-  /* Para adicionar uma opacidade e torná-los ligeiramente transparentes */
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -578,7 +548,6 @@ section {
 
 .carousel-button:hover {
   background-color: rgba(255, 255, 255, 1);
-  /* Tornar o botão completamente opaco quando o mouse estiver sobre ele */
 }
 
 #prev {
@@ -596,21 +565,18 @@ section {
 @media (max-width: 1200px) {
   .carousel-slider .card {
     width: calc(100% / 4);
-    /* Mostrando 2 cards por vez em telas menores */
   }
 }
 
 @media (max-width: 992px) {
   .carousel-slider .card {
     width: calc(100% / 3);
-    /* Mostrando 2 cards por vez em telas menores */
   }
 }
 
 @media (max-width: 768px) {
   .carousel-slider .card {
     width: calc(100% / 2);
-    /* Mostrando 2 cards por vez em telas menores */
   }
 }
 
@@ -618,7 +584,6 @@ section {
   .carousel-slider .card {
 
     max-width: 100%;
-    /* Mostrando 1 card por vez em telas muito pequenas */
   }
 }
 

@@ -8,6 +8,8 @@
     <title>Mais Digital</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/icon.png">
 
+    <!-- BIBLIOTECAS EXTERNAS -->
+
     <!-- Bootstrap CSS 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -16,12 +18,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-5JElU1S5xL9CJZ+oL6h/4Ty4fPe1MtzOyNwIdvE56ujrW8eXzV7hb+KZvufV7I52bzglJ/eV7cw2w99g+LEsLQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Seu CSS personalizado -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
+    
+        <!-- Line Awesome -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
 
 </head>
 
@@ -42,9 +46,9 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#section2">Chromebook</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="#section3">Mais Digital</a>
                                 </li>
@@ -72,7 +76,7 @@
     <section id="section2" class="py-0 ">
         <div id="unified-section">
             <div class="image-container">
-                <img class="my-image" src="./assets/img/chromebook.png" alt="Sua Imagem">
+                <img class="my-image" src="./assets/img/chromebook.png" alt="Chromebook">
             </div>
             <div class="text-container-1">
                 <div class="text-1">
@@ -81,7 +85,7 @@
             </div>
             <div class="text-container-2">
                 <div class="text-2">
-                    <p>Conexão, interação em um abiente educacional inovador por meio do CHROMEBOOK</p>
+                    <p>Conexão, interação em um abiente educacional inovador por meio do Chromebook</p>
                 </div>
             </div>
         </div>
@@ -91,15 +95,14 @@
     <section id="section3" class="py-4 bg-cinza">
         <div class="container">
             <div class="mb-4 mais-digital">
-                <img src="./assets/img/mais-digital-logo.svg" alt="">
-                <!-- <h2 class="text-center mb-4 titulo">+ DIGITAL</h2> -->
+                <img src="./assets/img/mais-digital-logo.svg" alt="Mais Digital">
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-4 col-md-5 mb-4 card-curso">
                     <div class="card rounded card-mais-digital-1">
-                        <img src="./assets/img/bg-card-1.jpg" class="card-img-top" alt="Básico">
+                        <img src="./assets/img/bg-card-1.jpg" class="card-img-top" alt="Dicas Chromebook">
                         <div class="card-body">
-                            <h5 class="card-title mb-0">DICAS CHROMEBOOK</h5>
+                            <h5 class="card-title mb-0 d-flex justify-content-center">DICAS CHROMEBOOK</h5>
                             <hr>
                             <a type="button" href="https://youtube.com/playlist?list=PLbEB0OYbh2RJMcFjmNWtoi8AmgEk7d_tu"
                                 class="btn btn-light botao-card-2" target="_blank">
@@ -110,9 +113,9 @@
                 </div>
                 <div class="col-lg-4 col-md-5 mb-4 card-curso">
                     <div class="card rounded card-mais-digital-2">
-                        <img src="./assets/img/bg-card-2.jpg" class="card-img-top" alt="Intermediário">
+                        <img src="./assets/img/bg-card-2.jpg" class="card-img-top" alt="Ambiente Virtual">
                         <div class="card-body">
-                            <h5 class="card-title mb-0">ACESSE A SALA DE AULA</h5>
+                            <h5 class="card-title mb-0 d-flex justify-content-center">AMBIENTE VIRTUAL</h5>
                             <hr>
                             <a type="button" href="https://classroom.google.com/u/1/h"
                                 class="btn btn-light botao-card-2" target="_blank">
@@ -123,9 +126,9 @@
                 </div>
                 <div class="col-lg-4 col-md-5 mb-4 card-curso">
                     <div class="card rounded card-mais-digital-3">
-                        <img src="./assets/img/bg-card-3.jpg" class="card-img-top" alt="Avançado">
+                        <img src="./assets/img/bg-card-3.jpg" class="card-img-top" alt="Aguardando">
                         <div class="card-body">
-                            <h5 class="card-title mb-0">AGUARDANDO</h5>
+                            <h5 class="card-title mb-0 d-flex justify-content-center">PESQUISA DE SATISFAÇÃO</h5>
                             <hr>
                             <a type="button" href="#" class="btn btn-light botao-card-2" target="_blank">
                                 Acesse
@@ -137,84 +140,14 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 4 CARDS COM ICONES -->
-    <!-- <section id="section4" class="py-4 ">
-        <div class="container">
-            <h2 class="text-center mb-4 titulo">EDUCAÇÃO TECNOLÓGICA</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                    <div class="card h-100 card-icones">
-                        <div class="div-icones">
-                            <img src="./assets/img/braço.svg" class="card-img-top p-3 icones" alt="Ícone 3">
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="card-titulo-icones">
-                                <h6 class="card-title">STEAM</h6>
-                            </div>
-                            <div class="card-links-icones">
-                                <a href="#" class="card-link">Link 1</a><br>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                    <div class="card h-100 card-icones">
-                        <div class="div-icones">
-                            <img src="./assets/img/puzzle.svg" class="card-img-top p-3 icones" alt="Ícone 3">
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="card-titulo-icones">
-                                <h6 class="card-title">METODOLOGIAS ATIVAS COM TDIC</h6>
-                            </div>
-                            <div class="card-links-icones">
-                                <a href="#" class="card-link">Link 1</a><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                    <div class="card h-100 card-icones">
-                        <div class="div-icones">
-                            <img src="./assets/img/game.svg" class="card-img-top p-3 icones" alt="Ícone 3">
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="card-titulo-icones">
-                                <h6 class="card-title">GAMIFICAÇÃO</h6>
-                            </div>
-                            <div class="card-links-icones">
-                                <a href="#" class="card-link">Link 1</a><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                    <div class="card h-100 card-icones">
-                        <div class="div-icones">
-                            <img src="./assets/img/tablet.svg" class="card-img-top p-3 icones" alt="Ícone 3">
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="card-titulo-icones">
-                                <h6 class="card-title">DIDÁTICA PARA A EDUCAÇÃO TECNOLÓGICA</h6>
-                            </div>
-                            <div class="card-links-icones">
-                                <a href="#" class="card-link">Link 1</a><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <div id="section4" class="py-4 ">
-        <h2 class="text-center mb-4 titulo">E-BOOK TUTORIAL CHROMEBOOK</h2>
+    <!-- SEÇÃO CAROUSEL -->
+    <section id="section4" class="py-4 ">
+        <h2 class="text-center mb-4 titulo">E-BOOK TUTORIAL</h2>
         <div class="container carousel-container">
             <div class="carousel-slider">
-                <!-- Exemplo de Card -->
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/chromebook-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/chromebook-icon.svg" alt="Chromebook">
                     </div>
                     <div class="card-body">
                         <h6>Chromebook</h6>
@@ -227,7 +160,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/classroom-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/classroom-icon.svg" alt="Sala de Aula">
                     </div>
                     <div class="card-body">
                         <h6>Sala de Aula</h6>
@@ -240,7 +173,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/jamboard-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/jamboard-icon.svg" alt="Jamboard">
                     </div>
                     <div class="card-body">
                         <h6>Jamboard</h6>
@@ -253,7 +186,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/drive-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/drive-icon.svg" alt="Google Drive">
                     </div>
                     <div class="card-body">
                         <h6>Google Drive</h6>
@@ -266,7 +199,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/gmail-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/gmail-icon.svg" alt="Gmail">
                     </div>
                     <div class="card-body">
                         <h6>Gmail</h6>
@@ -279,7 +212,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/meet-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/meet-icon.svg" alt="Meet">
                     </div>
                     <div class="card-body">
                         <h6>Google Meet</h6>
@@ -292,7 +225,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/forms-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/forms-icon.svg" alt="Formulários">
                     </div>
                     <div class="card-body">
                         <h6>Formulários</h6>
@@ -305,7 +238,7 @@
 
                 <div class="card">
                     <div class="capa">
-                        <img src="./assets/img/agenda-icon.svg" alt="Ícone do Card">
+                        <img src="./assets/img/agenda-icon.svg" alt="Agenda">
                     </div>
                     <div class="card-body">
                         <h6>Google Agenda</h6>
@@ -315,21 +248,17 @@
                         </a>
                     </div>
                 </div>
-                <!-- Copie e cole o card acima para adicionar mais cards. -->
-
             </div>
 
             <button id="prev" class="carousel-button"><i class="fa-solid fa-play fa-rotate-180"></i></button>
             <button id="next" class="carousel-button"><i class="fa-solid fa-play"></i></button>
         </div>
-
-    </div>
+    </section>
 
 
     <!-- RODAPÉ -->
     <footer class="py-4 rodape" id="footer">
         <div class="row content">
-
             <div class="col-md-6 col-lg-3 blocos-footer">
                 <img class="logo-rodape" src="./assets/img/logo-pmjp-white.svg"
                     alt="Prefeitura Municipal de João Pessoa">
@@ -341,33 +270,35 @@
             <div class="col-md-6 col-lg-3 blocos-footer">
                 <h2>Google For Education</h2>
                 <ul class="list-unstyled lista-footer">
-                    <li><a
-                            href="https://edu.google.com/intl/ALL_br/workspace-for-education/editions/education-fundamentals/">G
-                            Suite for Education</a></li>
-                    <li><a href="https://edu.google.com/intl/ALL_br/workspace-for-education/classroom/">Sala de Aula</a>
+                    <li><a href="https://edu.google.com/intl/ALL_br/workspace-for-education/editions/education-fundamentals/" target="_blank">G Suite for Education</a></li>
+                    <li><a href="https://edu.google.com/intl/ALL_br/workspace-for-education/classroom/" target="_blank">Sala de Aula</a>
                     </li>
-                    <li><a href="https://edu.google.com/intl/ALL_br/workspace-for-education/assignments/">Tarefas</a>
+                    <li><a href="https://edu.google.com/intl/ALL_br/workspace-for-education/assignments/" target="_blank">Tarefas</a>
                     </li>
-                    <li><a href="https://edu.google.com/intl/ALL_br/chromebooks/overview/">Chromebooks</a></li>
-                    <li><a href="https://edu.google.com/intl/ALL_br/jamboard/">Jamboard</a></li>
+                    <li><a href="https://edu.google.com/intl/ALL_br/chromebooks/overview/" target="_blank">Chromebooks</a></li>
+                    <li><a href="https://edu.google.com/intl/ALL_br/jamboard/" target="_blank">Jamboard</a></li>
                 </ul>
             </div>
+
             <div class="col-md-6 col-lg-3 blocos-footer">
                 <h2>+ Digital</h2>
                 <ul class="list-unstyled lista-footer">
-                    <li><a href="https://www.youtube.com/playlist?list=PLbEB0OYbh2RJMcFjmNWtoi8AmgEk7d_tu" target="_blank">Dicas Chromebook</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLbEB0OYbh2RJMcFjmNWtoi8AmgEk7d_tu"
+                            target="_blank">Dicas Chromebook</a></li>
                     <li><a href="https://classroom.google.com/u/1/h" target="_blank">Sala de Aula</a></li>
                     <li><a href="#">Aguardando</a></li>
                 </ul>
             </div>
+
             <div class="col-md-6 col-lg-3 blocos-footer">
                 <h2>Contatos</h2>
                 <ul class="list-unstyled">
-                    <li>TESTE - <a href="#"></a><span>(83) 3222-2222</span></li>
-                    <li>TESTE - <a href="#"></a><span>(83) 3222-2222</span></li>
+                    <li>SEDEC - <a href="#"></a><span>(83) 3218-9275-2222</span></li>
+                    <li>CENTRAL TELEFÔNICA - <a href="#"></a><span>(83) 3218-9000</span></li>
                 </ul>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-12 text-center">
                 <p>Feito com <i class="animate__pulse fas fa-heart"></i> por servidores públicos</p>
@@ -380,9 +311,8 @@
         <i class="fas fa-solid fa-circle-chevron-up"></i>
     </button>
 
-    <!-- MODAL 1 SEÇÃO 2 -->
 
-    <!-- MODAL 1 -->
+    <!-- MODAL SEÇÃO CAROUSEL -->
     <div class="modal" id="Modal1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -452,29 +382,52 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/1jzOC0MPZcSLCzU2sSgr4-E6MrNTlg8In/view" target="_blank">- Acessando o Classroom</a></li>
-                        <li><a href="https://drive.google.com/file/d/10GJ9AyZuzzdmIEsJFlLlf-YKVX7BChKl/view" target="_blank">- Convidando Aluno</a></li>
-                        <li><a href="https://drive.google.com/file/d/1uzMaz3VqbXp4Cgo0DA3gehUEbzFyrQ0Q/view" target="_blank">- Adicionando anexo na atividade</a></li>
-                        <li><a href="https://drive.google.com/file/d/1FZLo5t158XQcWN5byq_MNubtPH5IzomY/view" target="_blank">- Atribuindo Notas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1MXcoxUD1DZH360YiRV5h65cvuuuDW30x/view" target="_blank">- Criando uma atividade</a></li>
-                        <li><a href="https://drive.google.com/file/d/1guaxqokiDa2qZ2ZPwPnksUajJeeHqWAX/view" target="_blank">- Finalizando a criação da atividade</a></li>
-                        <li><a href="https://drive.google.com/file/d/13sMTjUaAQZFkkADJeg4HZVXQyjb5uFHF/view" target="_blank">- Criando atividade com teste</a></li>
-                        <li><a href="https://drive.google.com/file/d/1XxFyvc6zLW4ExaNgnNyBjV1xVt6CYw-5/view" target="_blank">- Inteface da criação de uma atividade com teste</a></li>
-                        <li><a href="https://drive.google.com/file/d/1gyMBtohIxN99SQ4CVMC5Yt4XhOHlUoif/view" target="_blank">- Como configurar e enviar Formulário de atividade com teste</a></li>
-                        <li><a href="https://drive.google.com/file/d/13W82-SqSHrucpzjHpN7koGzqiExeicKt/view" target="_blank">- Criando material</a></li>
-                        <li><a href="https://drive.google.com/file/d/122G8cYoiuxRdzlFk92Hq23AwFx-QdHiF/view" target="_blank">- Criando tópico</a></li>
-                        <li><a href="https://drive.google.com/file/d/1cNqvKFkG6YFbO1HFpynZiQAmvKfV-UxA/view" target="_blank">- Criando perguntas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1-wGMM3Myvw7hU3P7u5l2nwtUVj29yBcX/view" target="_blank">- Criando sala de aula</a></li>
-                        <li><a href="https://drive.google.com/file/d/1JEinmzWX4oC9WFKJmUd85EgrX-ismC8F/view" target="_blank">- Criando turmas</a></li>
-                        <li><a href="https://drive.google.com/file/d/12-ZLHKYFeHoo2GIo1gkimvj0GXKTBZpV/view" target="_blank">- Criando avisos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1VDV5wpU5jKUAfp-4FwaEbrwK0G983VDV/view" target="_blank">- Criando uma Rúbrica</a></li>
-                        <li><a href="https://drive.google.com/file/d/1h-MPBkG_W5nix-2dsXKFX_HJKBUBCeUy/view" target="_blank">- Inteface de um formulário</a></li>
-                        <li><a href="https://drive.google.com/file/d/1IDpznxW_QznE224Y5qVTzTa23AI0aRiv/view" target="_blank">- Inteface para criar uma pergunta</a></li>
-                        <li><a href="https://drive.google.com/file/d/1kf0LCvzcV6OHtKAlIC_Ho_abeAr_0Dpi/view" target="_blank">- Programando uma atividade</a></li>
-                        <li><a href="https://drive.google.com/file/d/1kycpqSzMxVeijX3C0XGnY6yyt6RtN8Gj/view" target="_blank">- Como convidar professores</a></li>
-                        <li><a href="https://drive.google.com/file/d/1I7ZCGtmgaRLfNXrNPF07H9IJgn6_7uRm/view" target="_blank">- Como reutilizar postagem</a></li>
-                        <li><a href="https://drive.google.com/file/d/1hjwb61vUBML714WmWhcW-3VTCQbxFQjG/view" target="_blank">- Interface da aba pessoas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Xh_PF1TzxMMb79Ub4sPIW_Bk-Fxkixjv/view" target="_blank">- Interface da aba mural</a></li>
+                        <li><a href="https://drive.google.com/file/d/1jzOC0MPZcSLCzU2sSgr4-E6MrNTlg8In/view"
+                                target="_blank">- Acessando o Classroom</a></li>
+                        <li><a href="https://drive.google.com/file/d/10GJ9AyZuzzdmIEsJFlLlf-YKVX7BChKl/view"
+                                target="_blank">- Convidando Aluno</a></li>
+                        <li><a href="https://drive.google.com/file/d/1uzMaz3VqbXp4Cgo0DA3gehUEbzFyrQ0Q/view"
+                                target="_blank">- Adicionando anexo na atividade</a></li>
+                        <li><a href="https://drive.google.com/file/d/1FZLo5t158XQcWN5byq_MNubtPH5IzomY/view"
+                                target="_blank">- Atribuindo Notas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1MXcoxUD1DZH360YiRV5h65cvuuuDW30x/view"
+                                target="_blank">- Criando uma atividade</a></li>
+                        <li><a href="https://drive.google.com/file/d/1guaxqokiDa2qZ2ZPwPnksUajJeeHqWAX/view"
+                                target="_blank">- Finalizando a criação da atividade</a></li>
+                        <li><a href="https://drive.google.com/file/d/13sMTjUaAQZFkkADJeg4HZVXQyjb5uFHF/view"
+                                target="_blank">- Criando atividade com teste</a></li>
+                        <li><a href="https://drive.google.com/file/d/1XxFyvc6zLW4ExaNgnNyBjV1xVt6CYw-5/view"
+                                target="_blank">- Inteface da criação de uma atividade com teste</a></li>
+                        <li><a href="https://drive.google.com/file/d/1gyMBtohIxN99SQ4CVMC5Yt4XhOHlUoif/view"
+                                target="_blank">- Como configurar e enviar Formulário de atividade com teste</a></li>
+                        <li><a href="https://drive.google.com/file/d/13W82-SqSHrucpzjHpN7koGzqiExeicKt/view"
+                                target="_blank">- Criando material</a></li>
+                        <li><a href="https://drive.google.com/file/d/122G8cYoiuxRdzlFk92Hq23AwFx-QdHiF/view"
+                                target="_blank">- Criando tópico</a></li>
+                        <li><a href="https://drive.google.com/file/d/1cNqvKFkG6YFbO1HFpynZiQAmvKfV-UxA/view"
+                                target="_blank">- Criando perguntas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1-wGMM3Myvw7hU3P7u5l2nwtUVj29yBcX/view"
+                                target="_blank">- Criando sala de aula</a></li>
+                        <li><a href="https://drive.google.com/file/d/1JEinmzWX4oC9WFKJmUd85EgrX-ismC8F/view"
+                                target="_blank">- Criando turmas</a></li>
+                        <li><a href="https://drive.google.com/file/d/12-ZLHKYFeHoo2GIo1gkimvj0GXKTBZpV/view"
+                                target="_blank">- Criando avisos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1VDV5wpU5jKUAfp-4FwaEbrwK0G983VDV/view"
+                                target="_blank">- Criando uma Rúbrica</a></li>
+                        <li><a href="https://drive.google.com/file/d/1h-MPBkG_W5nix-2dsXKFX_HJKBUBCeUy/view"
+                                target="_blank">- Inteface de um formulário</a></li>
+                        <li><a href="https://drive.google.com/file/d/1IDpznxW_QznE224Y5qVTzTa23AI0aRiv/view"
+                                target="_blank">- Inteface para criar uma pergunta</a></li>
+                        <li><a href="https://drive.google.com/file/d/1kf0LCvzcV6OHtKAlIC_Ho_abeAr_0Dpi/view"
+                                target="_blank">- Programando uma atividade</a></li>
+                        <li><a href="https://drive.google.com/file/d/1kycpqSzMxVeijX3C0XGnY6yyt6RtN8Gj/view"
+                                target="_blank">- Como convidar professores</a></li>
+                        <li><a href="https://drive.google.com/file/d/1I7ZCGtmgaRLfNXrNPF07H9IJgn6_7uRm/view"
+                                target="_blank">- Como reutilizar postagem</a></li>
+                        <li><a href="https://drive.google.com/file/d/1hjwb61vUBML714WmWhcW-3VTCQbxFQjG/view"
+                                target="_blank">- Interface da aba pessoas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Xh_PF1TzxMMb79Ub4sPIW_Bk-Fxkixjv/view"
+                                target="_blank">- Interface da aba mural</a></li>
                     </ul>
                 </div>
 
@@ -503,20 +456,33 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/1taTeUaLGr0a7WVkEiE1MNR-vOnh5zUFX/view" target="_blank">- Conhecendo a Interface</a></li>
-                        <li><a href="https://drive.google.com/file/d/1nCcNabFfQi4dbV7k_yL3iIY_U7wh_fW3/view" target="_blank">- Como acessar</a></li>
-                        <li><a href="https://drive.google.com/file/d/1aol61IVpkvMSUhILfiRdn0d4811MfODS/view" target="_blank">- Como criar um Jamboard</a></li>
-                        <li><a href="https://drive.google.com/file/d/1_bRrxYbP24iaIDGSNMvl9W1R8k-gr2iX/view" target="_blank">- Inserindo caixas de texto</a></li>
-                        <li><a href="https://drive.google.com/file/d/10oGoMXNVciOXj48NtWxq-2-XX1-vR4Eq/view" target="_blank">- Inserindo uma imagem salva do computador</a></li>
-                        <li><a href="https://drive.google.com/file/d/17WkdjHwKBrvutS1-3zr3MrhXOlUJav78/view" target="_blank">- Inserindo formas geométricas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1IvhAMe7fO2z0ZhyyjVvn9l-xQF73wusl/view" target="_blank">- Inserindo uma imagem do Google Drive</a></li>
-                        <li><a href="https://drive.google.com/file/d/1sivGqC0K6BjbFnbqwv8_nslwf-skumz3/view" target="_blank">- Inserindo uma imagem do Google Imagens</a></li>
-                        <li><a href="https://drive.google.com/file/d/1AirEDjEeVCpz5O8APFyN99qtiho3S2bl/view" target="_blank">- Renomeando um arquivo</a></li>
-                        <li><a href="https://drive.google.com/file/d/1mlQE4QSbgxeRxASzF4Bp2E4szKVEldAq/view" target="_blank">- Usando a ferramenta Apagar</a></li>
-                        <li><a href="https://drive.google.com/file/d/1cP4K9DVNBIW9VUPRLvIki7Is4w0ClVab/view" target="_blank">- Usando a ferramenta Caneta</a></li>
-                        <li><a href="https://drive.google.com/file/d/1pBrdUEAIlXctfUtl42DSW2gudH0QzEIS/view" target="_blank">- Usando a ferramenta Laser</a></li>
-                        <li><a href="https://drive.google.com/file/d/1u2NROnLrUt2Dt03baF0bgziBv2jH1JPQ/view" target="_blank">- Usando a ferramenta Notas adesivas</a></li>
-                        
+                        <li><a href="https://drive.google.com/file/d/1taTeUaLGr0a7WVkEiE1MNR-vOnh5zUFX/view"
+                                target="_blank">- Conhecendo a Interface</a></li>
+                        <li><a href="https://drive.google.com/file/d/1nCcNabFfQi4dbV7k_yL3iIY_U7wh_fW3/view"
+                                target="_blank">- Como acessar</a></li>
+                        <li><a href="https://drive.google.com/file/d/1aol61IVpkvMSUhILfiRdn0d4811MfODS/view"
+                                target="_blank">- Como criar um Jamboard</a></li>
+                        <li><a href="https://drive.google.com/file/d/1_bRrxYbP24iaIDGSNMvl9W1R8k-gr2iX/view"
+                                target="_blank">- Inserindo caixas de texto</a></li>
+                        <li><a href="https://drive.google.com/file/d/10oGoMXNVciOXj48NtWxq-2-XX1-vR4Eq/view"
+                                target="_blank">- Inserindo uma imagem salva do computador</a></li>
+                        <li><a href="https://drive.google.com/file/d/17WkdjHwKBrvutS1-3zr3MrhXOlUJav78/view"
+                                target="_blank">- Inserindo formas geométricas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1IvhAMe7fO2z0ZhyyjVvn9l-xQF73wusl/view"
+                                target="_blank">- Inserindo uma imagem do Google Drive</a></li>
+                        <li><a href="https://drive.google.com/file/d/1sivGqC0K6BjbFnbqwv8_nslwf-skumz3/view"
+                                target="_blank">- Inserindo uma imagem do Google Imagens</a></li>
+                        <li><a href="https://drive.google.com/file/d/1AirEDjEeVCpz5O8APFyN99qtiho3S2bl/view"
+                                target="_blank">- Renomeando um arquivo</a></li>
+                        <li><a href="https://drive.google.com/file/d/1mlQE4QSbgxeRxASzF4Bp2E4szKVEldAq/view"
+                                target="_blank">- Usando a ferramenta Apagar</a></li>
+                        <li><a href="https://drive.google.com/file/d/1cP4K9DVNBIW9VUPRLvIki7Is4w0ClVab/view"
+                                target="_blank">- Usando a ferramenta Caneta</a></li>
+                        <li><a href="https://drive.google.com/file/d/1pBrdUEAIlXctfUtl42DSW2gudH0QzEIS/view"
+                                target="_blank">- Usando a ferramenta Laser</a></li>
+                        <li><a href="https://drive.google.com/file/d/1u2NROnLrUt2Dt03baF0bgziBv2jH1JPQ/view"
+                                target="_blank">- Usando a ferramenta Notas adesivas</a></li>
+
                 </div>
 
                 <!-- Rodapé do modal -->
@@ -543,28 +509,50 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/14HWXbqYqELHCa3rAvpjFqRGHE1ivvida/view" target="_blank">- Como utilizá-lo</a></li>
-                        <li><a href="https://drive.google.com/file/d/1SLmDICHhodsIfwq2aSdRubjwg_tjGCHP/view" target="_blank">- Acessando o Google Drive</a></li>
-                        <li><a href="https://drive.google.com/file/d/1E-EdgYFpvMhVX9KowTxSSHGHz4KmrtyT/view" target="_blank">- Fazendo Envio de Arquivos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1QYZ923PF1Wdc_f1N5P3JzYq2OsXNAzg0/view" target="_blank">- Compartilhando Arquivos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1J6BjSABC8RLAqGKQNdmrM9oc0mtMX8Xm/view" target="_blank">- Localizando Arquivos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1VNGjMy65FFU3Vfk6CG-FvNi3t__-pt5C/view" target="_blank">- Upload de Pastas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1y2zbt0fwOyg1YP70np46-LROsJIOfzy5/view" target="_blank">- Como esvaziar a lixeira</a></li>
-                        <li><a href="https://drive.google.com/file/d/1GjLLC-0v0_Wnvy6G4-P1uWZfrRKRr2UT/view" target="_blank">- Compartilhamento de Arquivos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1WwcGdmVXCiDSXDxj3ZAgYzkxO7q7OIH7/view" target="_blank">- Localizar Arquivo</a></li>
-                        <li><a href="https://drive.google.com/file/d/114tXGFOy-PMxcLzy5800QQy6bOzOVZpj/view" target="_blank">- Excluindo arquivo ou pasta</a></li>
-                        <li><a href="https://drive.google.com/file/d/1yc4raxz_G8SJox00L9bcJWm3SHd5CMsA/view" target="_blank">- Alterando a cor de pastas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1_vM0zRYVSldtom8JPpYg-4n-rZJR6EDM/view" target="_blank">- Criar Pasta</a></li>
-                        <li><a href="https://drive.google.com/file/d/1siG2B-qKOYJCzDN7eCB6G9ylWwd2lPd2/view" target="_blank">- Download de Arquivos</a></li>
-                        <li><a href="https://drive.google.com/file/d/16HfW4cAi-vcysIT-D_VnSX-r8LhX6IlJ/view" target="_blank">- Navegadores e S.O. Compatíveis</a></li>
-                        <li><a href="https://drive.google.com/file/d/17WBrJmtpsGIY7I0MTAZWfc6KyQxmnzLF/view" target="_blank">- Fazer cópia de arquivo ou pasta</a></li>
-                        <li><a href="https://drive.google.com/file/d/1j0mpsI9vn9fwzz3GVuXOZ1bUbqBrcKv6/view" target="_blank">- Criar e nomear panilhas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Q4cojqwr4uam_OyCllhPMt1of8MJ4C3t/view" target="_blank">- Criar e nomear arquivos de texto</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Te2-qASHwaHYBrjUIJ14X_5liiEr1Rvc/view" target="_blank">- Criar e nomear apresentações/slides</a></li>
-                        <li><a href="https://drive.google.com/file/d/1tBeyPebt6HA9DKte9r8HWRkeUilOa0WL/view" target="_blank">- Usar arquivos em modo offline</a></li>
-                        <li><a href="https://drive.google.com/file/d/1dKBjXFzpZgt66I14O5L61PI11SGt4PYx/view" target="_blank">- Armazenamento compartilhado</a></li>
-                        <li><a href="https://drive.google.com/file/d/1mNC9zJYqHB8bC8eKKov-dgwWrjDPL5Tl/view" target="_blank">- Assistir vídeos armazenados</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Jksy25EqiXOKTS7Iia2R8bdZmJVSgqKz/view" target="_blank">- Movendo arquivos para pastas</a></li>
+                        <li><a href="https://drive.google.com/file/d/14HWXbqYqELHCa3rAvpjFqRGHE1ivvida/view"
+                                target="_blank">- Como utilizá-lo</a></li>
+                        <li><a href="https://drive.google.com/file/d/1SLmDICHhodsIfwq2aSdRubjwg_tjGCHP/view"
+                                target="_blank">- Acessando o Google Drive</a></li>
+                        <li><a href="https://drive.google.com/file/d/1E-EdgYFpvMhVX9KowTxSSHGHz4KmrtyT/view"
+                                target="_blank">- Fazendo Envio de Arquivos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1QYZ923PF1Wdc_f1N5P3JzYq2OsXNAzg0/view"
+                                target="_blank">- Compartilhando Arquivos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1J6BjSABC8RLAqGKQNdmrM9oc0mtMX8Xm/view"
+                                target="_blank">- Localizando Arquivos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1VNGjMy65FFU3Vfk6CG-FvNi3t__-pt5C/view"
+                                target="_blank">- Upload de Pastas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1y2zbt0fwOyg1YP70np46-LROsJIOfzy5/view"
+                                target="_blank">- Como esvaziar a lixeira</a></li>
+                        <li><a href="https://drive.google.com/file/d/1GjLLC-0v0_Wnvy6G4-P1uWZfrRKRr2UT/view"
+                                target="_blank">- Compartilhamento de Arquivos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1WwcGdmVXCiDSXDxj3ZAgYzkxO7q7OIH7/view"
+                                target="_blank">- Localizar Arquivo</a></li>
+                        <li><a href="https://drive.google.com/file/d/114tXGFOy-PMxcLzy5800QQy6bOzOVZpj/view"
+                                target="_blank">- Excluindo arquivo ou pasta</a></li>
+                        <li><a href="https://drive.google.com/file/d/1yc4raxz_G8SJox00L9bcJWm3SHd5CMsA/view"
+                                target="_blank">- Alterando a cor de pastas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1_vM0zRYVSldtom8JPpYg-4n-rZJR6EDM/view"
+                                target="_blank">- Criar Pasta</a></li>
+                        <li><a href="https://drive.google.com/file/d/1siG2B-qKOYJCzDN7eCB6G9ylWwd2lPd2/view"
+                                target="_blank">- Download de Arquivos</a></li>
+                        <li><a href="https://drive.google.com/file/d/16HfW4cAi-vcysIT-D_VnSX-r8LhX6IlJ/view"
+                                target="_blank">- Navegadores e S.O. Compatíveis</a></li>
+                        <li><a href="https://drive.google.com/file/d/17WBrJmtpsGIY7I0MTAZWfc6KyQxmnzLF/view"
+                                target="_blank">- Fazer cópia de arquivo ou pasta</a></li>
+                        <li><a href="https://drive.google.com/file/d/1j0mpsI9vn9fwzz3GVuXOZ1bUbqBrcKv6/view"
+                                target="_blank">- Criar e nomear panilhas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Q4cojqwr4uam_OyCllhPMt1of8MJ4C3t/view"
+                                target="_blank">- Criar e nomear arquivos de texto</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Te2-qASHwaHYBrjUIJ14X_5liiEr1Rvc/view"
+                                target="_blank">- Criar e nomear apresentações/slides</a></li>
+                        <li><a href="https://drive.google.com/file/d/1tBeyPebt6HA9DKte9r8HWRkeUilOa0WL/view"
+                                target="_blank">- Usar arquivos em modo offline</a></li>
+                        <li><a href="https://drive.google.com/file/d/1dKBjXFzpZgt66I14O5L61PI11SGt4PYx/view"
+                                target="_blank">- Armazenamento compartilhado</a></li>
+                        <li><a href="https://drive.google.com/file/d/1mNC9zJYqHB8bC8eKKov-dgwWrjDPL5Tl/view"
+                                target="_blank">- Assistir vídeos armazenados</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Jksy25EqiXOKTS7Iia2R8bdZmJVSgqKz/view"
+                                target="_blank">- Movendo arquivos para pastas</a></li>
                 </div>
 
                 <!-- Rodapé do modal -->
@@ -591,8 +579,10 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/1WqB4aua7vyCMXXpkGvuEdfR4EnQl96MY/view" target="_blank">- Criando pelo Site</a></li>
-                        <li><a href="https://drive.google.com/file/d/1C07yIGG7MAtpnsNW4WGaF8U3EZdzET3i/view" target="_blank">- Verificando pelo Site</a></li>
+                        <li><a href="https://drive.google.com/file/d/1WqB4aua7vyCMXXpkGvuEdfR4EnQl96MY/view"
+                                target="_blank">- Criando pelo Site</a></li>
+                        <li><a href="https://drive.google.com/file/d/1C07yIGG7MAtpnsNW4WGaF8U3EZdzET3i/view"
+                                target="_blank">- Verificando pelo Site</a></li>
                 </div>
 
                 <!-- Rodapé do modal -->
@@ -619,17 +609,28 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/1REzVMK9H-KwmbLy339Cbz8HPP9-l4Y0F/view" target="_blank">- Como acessar</a></li>
-                        <li><a href="https://drive.google.com/file/d/1O_iv0x-hSYclH3zsLhz1z-6YBCYEhGyC/view" target="_blank">- Agendando Reuniões</a></li>
-                        <li><a href="https://drive.google.com/file/d/15_fw5oZ1PnI2-I2FdDNNnZr56PFjt9u6/view" target="_blank">- Criando Reuniões</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Ra6kBbMsoPjtSvByE1hSw8g9UldAFgiz/view" target="_blank">- Audio e video</a></li>
-                        <li><a href="https://drive.google.com/file/d/1BrGG0AiatfYPbXvSw2SiIxGLSr_kOW7Q/view" target="_blank">- Alterando Layout</a></li>
-                        <li><a href="https://drive.google.com/file/d/12IT7VUegMS3LUaBtWB61tWyw2BvvEVN2/view" target="_blank">- Anexos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1yPUkNh1lQjR28oXsimqjxRaIaK3htAbV/view" target="_blank">- Criando uma reunião instantânea</a></li>
-                        <li><a href="https://drive.google.com/file/d/1ukWjbKS4bktx5qb2zOpOy8w6gUKC7GAt/view" target="_blank">- Como participar de uma reunião</a></li>
-                        <li><a href="https://drive.google.com/file/d/1W7Es6IAq-q_ev-sNndUOKDeL_mCdEWrJ/view" target="_blank">- Adicionando o Jamboard do Drive</a></li>
-                        <li><a href="https://drive.google.com/file/d/1fxdC13U3qSde1wHDLRMZoBZvKBGvOnGN/view" target="_blank">- Adicionando Legenda</a></li>
-                        <li><a href="https://drive.google.com/file/d/1SvgkPMEroK45CGwpb519F97zUDZruC_v/view" target="_blank">- Plano de Fundo</a></li>
+                        <li><a href="https://drive.google.com/file/d/1REzVMK9H-KwmbLy339Cbz8HPP9-l4Y0F/view"
+                                target="_blank">- Como acessar</a></li>
+                        <li><a href="https://drive.google.com/file/d/1O_iv0x-hSYclH3zsLhz1z-6YBCYEhGyC/view"
+                                target="_blank">- Agendando Reuniões</a></li>
+                        <li><a href="https://drive.google.com/file/d/15_fw5oZ1PnI2-I2FdDNNnZr56PFjt9u6/view"
+                                target="_blank">- Criando Reuniões</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Ra6kBbMsoPjtSvByE1hSw8g9UldAFgiz/view"
+                                target="_blank">- Audio e video</a></li>
+                        <li><a href="https://drive.google.com/file/d/1BrGG0AiatfYPbXvSw2SiIxGLSr_kOW7Q/view"
+                                target="_blank">- Alterando Layout</a></li>
+                        <li><a href="https://drive.google.com/file/d/12IT7VUegMS3LUaBtWB61tWyw2BvvEVN2/view"
+                                target="_blank">- Anexos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1yPUkNh1lQjR28oXsimqjxRaIaK3htAbV/view"
+                                target="_blank">- Criando uma reunião instantânea</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ukWjbKS4bktx5qb2zOpOy8w6gUKC7GAt/view"
+                                target="_blank">- Como participar de uma reunião</a></li>
+                        <li><a href="https://drive.google.com/file/d/1W7Es6IAq-q_ev-sNndUOKDeL_mCdEWrJ/view"
+                                target="_blank">- Adicionando o Jamboard do Drive</a></li>
+                        <li><a href="https://drive.google.com/file/d/1fxdC13U3qSde1wHDLRMZoBZvKBGvOnGN/view"
+                                target="_blank">- Adicionando Legenda</a></li>
+                        <li><a href="https://drive.google.com/file/d/1SvgkPMEroK45CGwpb519F97zUDZruC_v/view"
+                                target="_blank">- Plano de Fundo</a></li>
                 </div>
 
                 <!-- Rodapé do modal -->
@@ -657,9 +658,11 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/16834yheFxgWuAvqDHbUM5bQhvZpbRJCA/view" target="_blank">Acessando Formulários</a></li>
-                        <li><a href="https://drive.google.com/file/d/1A1l3WjQ3NnqrA0uaJ5mCDxs1XMmVf_8U/view" target="_blank">Alterando o tema do Formulário</a></li>
-                        <li><a href="#" target="_blank">Configurando Formulário</a></li>
+                        <li><a href="https://drive.google.com/file/d/16834yheFxgWuAvqDHbUM5bQhvZpbRJCA/view"
+                                target="_blank">- Acessando Formulários</a></li>
+                        <li><a href="https://drive.google.com/file/d/1A1l3WjQ3NnqrA0uaJ5mCDxs1XMmVf_8U/view"
+                                target="_blank">- Alterando o tema do Formulário</a></li>
+                        <li><a href="#" target="_blank">- Configurando Formulário</a></li>
                 </div>
 
                 <!-- Rodapé do modal -->
@@ -686,27 +689,38 @@
                 <div class="modal-body">
                     <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://drive.google.com/file/d/1UQpqVBlqKZPGO8VejaZjfGbc9m6ph6uD/view" target="_blank">Como ter acesso ao Google Agenda</a></li>
-                        <li><a href="https://drive.google.com/file/d/1-rxUeNEZFWnmMRa-5f8vPt392KXYESdI/view" target="_blank">Acessando a Agenda</a></li>
-                        <li><a href="https://drive.google.com/file/d/13b-LOEVTQzCDte5Yh2q5yWvq_RR0Kee_/view" target="_blank">Criando eventos</a></li>
-                        <li><a href="https://drive.google.com/file/d/1TIb2YpSMVG5Uecrbm3X2MkvYspyn9zpG/view" target="_blank">Criando Tarefas</a></li>
-                        <li><a href="https://drive.google.com/file/d/1--eRvKqj0DqSZj9i4uH2Zdt6_XLDuwJm/view" target="_blank">Criando Lembretes</a></li>
-                        <li><a href="https://drive.google.com/file/d/1wMHDupCaDe5m__LVgBsp0fhNxOLvNQsa/view" target="_blank">Excluindo Lembretes</a></li>
-                        <li><a href="https://drive.google.com/file/d/1vxoiutN-GGhjXvqNF8VEe30Bzj2sfWj1/view" target="_blank">Acessando</a></li>
-                        <li><a href="https://drive.google.com/file/d/1tq8weIozrTtl5Ml6Rq70uRNvSbSqMjMF/view" target="_blank">Alterando Visualização de Mês para Dia</a></li>
-                        <li><a href="https://drive.google.com/file/d/1Y4a8IZ4w4vRbFaMhyx-IszlyTCaU7xwU/view" target="_blank">Alterando Visualização de Mês para Semana</a></li>
-                        <li><a href="https://drive.google.com/file/d/1qKTb2PcBkIOTi5TIzpQ3HMkCEO7fPHRF/view" target="_blank">Alterando Visualização de Seaman para Mês</a></li>
-                        <li><a href="https://drive.google.com/file/d/1oIlD4EbTZgoI0pN9-N-E_-GvbpMzB3CN/view" target="_blank">Anexar arquivo do computador em evento agendado</a></li>
-                        <li><a href="https://drive.google.com/file/d/1POH07Qmc1ssT7na9-J1QQUKgtkJvn7fv/view" target="_blank">Convidar pessoas para evento</a></li>
-                        <li><a href="https://drive.google.com/file/d/1hORPilk5IctLl05rhdmqUdIEqfrbi7jM/view" target="_blank">Criando nova agenda</a></li>
+                        <li><a href="https://drive.google.com/file/d/1UQpqVBlqKZPGO8VejaZjfGbc9m6ph6uD/view"
+                                target="_blank">- Como ter acesso ao Google Agenda</a></li>
+                        <li><a href="https://drive.google.com/file/d/1-rxUeNEZFWnmMRa-5f8vPt392KXYESdI/view"
+                                target="_blank">- Acessando a Agenda</a></li>
+                        <li><a href="https://drive.google.com/file/d/13b-LOEVTQzCDte5Yh2q5yWvq_RR0Kee_/view"
+                                target="_blank">- Criando eventos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1TIb2YpSMVG5Uecrbm3X2MkvYspyn9zpG/view"
+                                target="_blank">- Criando Tarefas</a></li>
+                        <li><a href="https://drive.google.com/file/d/1--eRvKqj0DqSZj9i4uH2Zdt6_XLDuwJm/view"
+                                target="_blank">- Criando Lembretes</a></li>
+                        <li><a href="https://drive.google.com/file/d/1wMHDupCaDe5m__LVgBsp0fhNxOLvNQsa/view"
+                                target="_blank">- Excluindo Lembretes</a></li>
+                        <li><a href="https://drive.google.com/file/d/1vxoiutN-GGhjXvqNF8VEe30Bzj2sfWj1/view"
+                                target="_blank">- Acessando</a></li>
+                        <li><a href="https://drive.google.com/file/d/1tq8weIozrTtl5Ml6Rq70uRNvSbSqMjMF/view"
+                                target="_blank">- Alterando Visualização de Mês para Dia</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Y4a8IZ4w4vRbFaMhyx-IszlyTCaU7xwU/view"
+                                target="_blank">- Alterando Visualização de Mês para Semana</a></li>
+                        <li><a href="https://drive.google.com/file/d/1qKTb2PcBkIOTi5TIzpQ3HMkCEO7fPHRF/view"
+                                target="_blank">- Alterando Visualização de Seaman para Mês</a></li>
+                        <li><a href="https://drive.google.com/file/d/1oIlD4EbTZgoI0pN9-N-E_-GvbpMzB3CN/view"
+                                target="_blank">- Anexar arquivo do computador em evento agendado</a></li>
+                        <li><a href="https://drive.google.com/file/d/1POH07Qmc1ssT7na9-J1QQUKgtkJvn7fv/view"
+                                target="_blank">- Convidar pessoas para evento</a></li>
+                        <li><a href="https://drive.google.com/file/d/1hORPilk5IctLl05rhdmqUdIEqfrbi7jM/view"
+                                target="_blank">- Criando nova agenda</a></li>
                 </div>
 
                 <!-- Rodapé do modal -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-
                 </div>
-
             </div>
         </div>
     </div>
