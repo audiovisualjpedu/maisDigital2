@@ -617,7 +617,11 @@ section {
 @media (max-width: 480px) {
   .carousel-slider .card {
 
-    max-width: 50%;
+    max-width: 100%/;
     /* Mostrando 1 card por vez em telas muito pequenas */
   }
+}
+
+.list-unstyled a{
+  text-decoration: none;
 }
