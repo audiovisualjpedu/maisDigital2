@@ -137,7 +137,7 @@ section {
 }
 
 .mais-digital img {
-  width: 200px;
+  height: 40px;
 }
 
 .card-mais-digital-1 {
@@ -617,7 +617,7 @@ section {
 @media (max-width: 480px) {
   .carousel-slider .card {
 
-    max-width: 100%/;
+    max-width: 100%;
     /* Mostrando 1 card por vez em telas muito pequenas */
   }
 }
