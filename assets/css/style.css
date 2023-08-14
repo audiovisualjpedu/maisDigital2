@@ -178,7 +178,6 @@ section {
 
 }
 
-/* Cards com ícones Seção 4 */
 .icones {
   width: 120px;
   height: 120px;
@@ -218,6 +217,14 @@ section {
   background: #7534D1;
   color: #FFFF;
   padding: 20px;
+}
+
+.modal-footer .btn-secondary {
+  background: #7534D1;
+}
+
+.modal-footer .btn-secondary:hover {
+  background: #8F5FC5;
 }
 
 .content {
