@@ -319,6 +319,17 @@ section {
   text-align: center;
 }
 
+.secao-paragrafo {
+  padding: 4rem 0;
+}
+
+#section-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .paragrafo {
   display: flex;
   justify-content: center;
@@ -358,10 +369,24 @@ section {
   margin-bottom: 5px;
 }
 
+.text-container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .btn-aulao-container {
-  place-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 4vh;
-  margin-bottom: 5px;
 }
 
 .text-1 {
@@ -410,9 +435,52 @@ section {
 }
 
 .my-image-2 {
-  width: 15vw;
-  height: 10vw;
-  min-height: 10vw;
+  width: 34vw;
+  height: 23vw;
+  min-height: 23vw;
+}
+
+.jpedu-logo {
+  padding: 15px;
+}
+
+.container-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30vh;
+}
+
+.container-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.embed-responsive-16by9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-responsive-16by9 iframe {
+/*   position: absolute;
+  top: 0;
+  left: 0; */
+  width: 400px;
+  height: 225px;
 }
 
 @media (max-width: 1200px) {
@@ -445,6 +513,54 @@ section {
     width: 34vw;
     min-height: 25vw;
   }
+
+  .jpedu-logo {
+    padding: 15px;
+  }
+  
+  .container-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vh;
+  }
+  
+  .container-youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+  
+  .embed-responsive-16by9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .embed-responsive-16by9 iframe {
+  /*   position: absolute;
+    top: 0;
+    left: 0; */
+    width: 375px;
+    height: 211px;
+  }
+  
+  .container-express {
+    font-size: small;
+  }
+
 }
 
 @media (max-width: 768px) {
