@@ -340,7 +340,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem;
   text-align: justify;
 }
 
@@ -394,6 +394,10 @@ section {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+.text-container-4 .text-4 h3 {
+  color: #8F5FC5;
 }
 
 .btn-aulao-container {
@@ -636,7 +640,7 @@ section {
   }
 
   .paragrafo {
-    margin-top: 0vh;
+    margin-top: 5vh;
   }
 
   .text-container-2 {
@@ -805,6 +809,10 @@ section {
 }
 
 @media (max-width: 480px) {
+
+  .text-container-2 .text-2 {
+    font-size: 17px;
+  }
 
   #section-youtube .container-conteudo {
     display: flex;
