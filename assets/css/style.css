@@ -407,6 +407,11 @@ section {
   font-size: 4vh;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
 .btns-aulao .btn{
   margin: 5px;
 }
@@ -485,6 +490,21 @@ section {
   justify-content: center;
   align-items: center;
   gap: 15vh;
+}
+
+.container-aulao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-aulao-descricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .container-youtube {
@@ -740,6 +760,8 @@ section {
     margin-top: 0;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
+    text-align: center;
   }
 
   .text-container-4 {
@@ -819,6 +841,16 @@ section {
 
   .text-container-2 .text-2 {
     font-size: 17px;
+  }
+
+  .container-aulao {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-image-2 {
+    height: 45vh;
+    width: 60vh;
   }
 
   #section-youtube .container-conteudo {
