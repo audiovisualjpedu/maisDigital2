@@ -322,6 +322,7 @@ section {
 .aulao {
   display: flex;
   justify-content: center;
+  padding: 5vh;
 }
 
 .secao-paragrafo {
