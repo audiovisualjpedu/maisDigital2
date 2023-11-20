@@ -565,8 +565,7 @@ section {
 
 @media (min-width: 1200px) {
   .secao-paragrafo .paragrafo {
-    padding: 5rem;
-
+    padding: 5rem 0 2rem;
   }
 }
 
