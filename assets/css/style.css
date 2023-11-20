@@ -543,6 +543,13 @@ section {
   }
 }
 
+@media (min-width: 1200px) {
+  .secao-paragrafo .paragrafo {
+    padding: 5rem;
+
+  }
+}
+
 @media (max-width: 992px) {
 
   .text-1 {
