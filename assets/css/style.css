@@ -792,12 +792,6 @@ section {
     padding: 0px;
     height: 100px;
   }
-
-  .btns-aulao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 @media (max-width: 576px) {
