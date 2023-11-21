@@ -418,8 +418,6 @@ section {
   align-items: center;
 }
 
-
-
 .btns-aulao .btn{
   margin: 5px;
   background: #7534D1 !important;
@@ -792,6 +790,11 @@ section {
     padding: 0px;
     height: 100px;
   }
+
+  .btns-aulao {
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 576px) {
