@@ -412,8 +412,21 @@ section {
   justify-content: center;
 }
 
+.btns-aulao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .btns-aulao .btn{
   margin: 5px;
+  background: #7534D1 !important;
+}
+
+.btns-aulao .btn:hover{
+  background: #8F5FC5 !important;
 }
 
 .text-1 {
@@ -779,6 +792,12 @@ section {
     padding: 0px;
     height: 100px;
   }
+
+  .btns-aulao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media (max-width: 576px) {
