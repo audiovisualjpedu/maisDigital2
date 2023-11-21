@@ -341,7 +341,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: justify;
 }
 
@@ -549,6 +549,12 @@ section {
   height: 225px;
 }
 
+/* @media (max-width: 1920px) {
+  .secao-paragrafo .paragrafo {
+    padding: 5rem 0 0rem;
+  }
+} */
+
 @media (max-width: 1200px) {
 
   .text-1 {
@@ -574,9 +580,10 @@ section {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .secao-paragrafo .paragrafo {
-    padding: 5rem 0 2rem;
+    padding: 4rem 0 0rem;
+    /* position: relative; */
   }
 }
 
@@ -820,7 +827,7 @@ section {
   }
 
   .paragrafo {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
 
   .my-image {
@@ -901,6 +908,7 @@ section {
   height: 200px;
   display: flex;
   align-items: center;
+  border: none
 }
 
 .carousel-slider .card .capa {
