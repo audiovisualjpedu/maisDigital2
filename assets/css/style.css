@@ -91,7 +91,7 @@ section {
 }
 
 .titulo {
-  font-weight: 400;
+  /* font-weight: 400; */
   margin-top: 50px;
 }
 
@@ -326,7 +326,7 @@ section {
 }
 
 .secao-paragrafo {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 #section-youtube {
