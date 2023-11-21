@@ -17,8 +17,14 @@ body {
   height: 60px;
 }
 
-.navbar-toggler {
-  color: #FFFF !important;
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(117, 52, 209, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #7534D1;
+  color: #ffffff !important;
 }
 
 button:focus {
@@ -418,12 +424,12 @@ section {
   align-items: center;
 }
 
-.btns-aulao .btn{
+.btns-aulao .btn {
   margin: 5px;
   background: #7534D1 !important;
 }
 
-.btns-aulao .btn:hover{
+.btns-aulao .btn:hover {
   background: #8F5FC5 !important;
 }
 
@@ -466,18 +472,18 @@ section {
   padding: 10px;
 }
 
-.text-aulao h3{
+.text-aulao h3 {
   padding: 20px;
   place-self: center;
   text-align: center;
-/*   margin-bottom: -37px; */
+  /*   margin-bottom: -37px; */
 }
 
-.text-aulao p{
+.text-aulao p {
   padding: 20px;
   place-self: center;
   text-align: center;
-/*   margin-bottom: -37px; */
+  /*   margin-bottom: -37px; */
 }
 
 .my-image {
@@ -542,7 +548,7 @@ section {
 }
 
 .embed-responsive-16by9 iframe {
-/*   position: absolute;
+  /*   position: absolute;
   top: 0;
   left: 0; */
   width: 400px;
@@ -605,7 +611,7 @@ section {
   .jpedu-logo {
     padding: 15px;
   }
-  
+
   .container-conteudo {
     display: flex;
     justify-content: space-between;
@@ -614,13 +620,13 @@ section {
     gap: 10vh;
     /* margin-top: 0px; */
   }
-  
+
   .container-youtube {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .youtube {
     display: flex;
     justify-content: center;
@@ -629,24 +635,24 @@ section {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
-  
+
   }
-  
+
   .embed-responsive-16by9 {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     /* overflow: hidden; */
   }
-  
+
   .embed-responsive-16by9 iframe {
-  /*   position: absolute;
+    /*   position: absolute;
     top: 0;
     left: 0; */
     width: 310px;
     height: 174px;
   }
-  
+
   .container-express {
     font-size: small;
     /* margin-top: -25vh; */
@@ -787,7 +793,7 @@ section {
     align-items: center;
     text-align: center;
   }
-  
+
   .text-container-4 .text-4 h3 {
     font-size: 20px;
 
@@ -856,7 +862,7 @@ section {
   .embed-responsive-16by9 iframe {
     width: 430px;
     height: 242px;
-  }  
+  }
 }
 
 @media (max-width: 480px) {
@@ -884,7 +890,7 @@ section {
   .embed-responsive-16by9 iframe {
     width: 350px;
     height: 197px;
-  }  
+  }
 }
 
 .carousel-container {
