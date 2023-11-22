@@ -121,7 +121,7 @@ section {
 }
 
 .mais-digital {
- /*  margin-top: 50px; */
+  /*  margin-top: 50px; */
   display: flex;
   justify-content: center;
 }
@@ -818,10 +818,10 @@ section {
      display: flex;
      justify-content: center;
    } */
-   
-   .mais-digital img {
-     height: 60px;
-   }
+
+  .mais-digital img {
+    height: 60px;
+  }
 
 }
 
@@ -1043,7 +1043,8 @@ section {
 /* Estilos base para todos os tamanhos de tela */
 .carousel-container-gallery {
   position: relative;
-  max-width: 1000px; /* Ajuste conforme necessário */
+  max-width: 1000px;
+  /* Ajuste conforme necessário */
   margin: auto;
   overflow: hidden;
 }
@@ -1082,8 +1083,13 @@ section {
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .overlay {
