@@ -4,7 +4,11 @@ const carousel = document.querySelector('.carousel-gallery');
 
 function showSlide(index) {
   const slideWidth = document.querySelector('.carousel-slide-gallery').offsetWidth;
-  carousel.style.transform = `translateX(${-index * slideWidth}px)`;
+  const gap = 10; // Adicione o valor do gap entre as imagens
+  const containerWidth = document.querySelector('.carousel-container-gallery').offsetWidth;
+  const centerOffset = (containerWidth - slideWidth - gap) / 2;
+
+  carousel.style.transform = `translateX(${-index * (slideWidth + gap) + centerOffset}px)`;
 }
 
 function nextSlide() {
@@ -13,7 +17,7 @@ function nextSlide() {
 }
 
 function prevSlide() {
-  currentIndex = (currentIndex - 2 + totalSlides) % totalSlides;
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
   showSlide(currentIndex);
 }
 
@@ -38,4 +42,18 @@ slides.forEach((slide, index) => {
 });
 
 // Automatic carousel
-setInterval(nextSlide, 4000);
+let intervalId;
+
+function startCarousel() {
+  intervalId = setInterval(nextSlide, 4000);
+}
+
+startCarousel();
+
+document.querySelector('.carousel-container-gallery').addEventListener('mouseenter', () => {
+  clearInterval(intervalId);
+});
+
+document.querySelector('.carousel-container-gallery').addEventListener('mouseleave', () => {
+  startCarousel();
+});
