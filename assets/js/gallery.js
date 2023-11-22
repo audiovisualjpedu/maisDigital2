@@ -1,4 +1,6 @@
 let currentIndex = 0;
+let startX = 0;
+let isDragging = false;
 const totalSlides = document.querySelectorAll('.carousel-slide-gallery').length;
 const carousel = document.querySelector('.carousel-gallery');
 
@@ -19,6 +21,32 @@ function nextSlide() {
 function prevSlide() {
   currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
   showSlide(currentIndex);
+}
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+  isDragging = true;
+}
+
+function handleTouchMove(event) {
+  if (!isDragging) return;
+
+  const currentX = event.touches[0].clientX;
+  const diff = startX - currentX;
+
+  // Adapte o valor 10 conforme necessário para suavizar o arrastar
+  if (Math.abs(diff) > 10) {
+    if (diff > 0) {
+      nextSlide();
+    } else {
+      prevSlide();
+    }
+    isDragging = false;
+  }
+}
+
+function handleTouchEnd() {
+  isDragging = false;
 }
 
 // Image zoom
@@ -57,3 +85,8 @@ document.querySelector('.carousel-container-gallery').addEventListener('mouseent
 document.querySelector('.carousel-container-gallery').addEventListener('mouseleave', () => {
   startCarousel();
 });
+
+// Adiciona os event listeners de toque
+carousel.addEventListener('touchstart', handleTouchStart);
+carousel.addEventListener('touchmove', handleTouchMove);
+carousel.addEventListener('touchend', handleTouchEnd);
